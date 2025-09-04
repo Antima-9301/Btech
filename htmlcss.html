@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML & CSS Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    section {
+      background: white;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    h2 { color: #4CAF50; }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HTML & CSS</h1>
+  </header>
+
+  <section>
+    <h2>Definition</h2>
+    <p><b>HTML (HyperText Markup Language)</b> is used to create the basic structure of a web page.  
+       <b>CSS (Cascading Style Sheets)</b> is used to style and design the webpage to make it look attractive.</p>
+  </section>
+
+  <section>
+    <h2>Uses</h2>
+    <ul>
+      <li>HTML creates headings, paragraphs, lists, images, tables, and forms.</li>
+      <li>CSS adds colors, fonts, spacing, and page layouts.</li>
+      <li>Both together make a complete and beautiful website.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Types</h2>
+    <p><b>HTML Tags:</b> Headings, Paragraphs, Links, Images, Tables, Forms etc.</p>
+    <p><b>CSS Types:</b></p>
+    <ul>
+      <li>Inline CSS → Applied directly inside the tag</li>
+      <li>Internal CSS → Written inside &lt;style&gt; tag in the same page</li>
+      <li>External CSS → Stored in a separate .css file</li>
+    </ul>
+  </section>
+
+  <!-- Button with alert -->
+  <button onclick="showExample()">Show Example</button>
+
+  <script>
+    function showExample() {
+      alert("Example of HTML & CSS:\n\n<!DOCTYPE html>\n<html>\n<head>\n  <style>\n    body { background-color: lightblue; }\n    h1 { color: darkblue; }\n    p { color: green; font-size: 18px; }\n    ul { color: purple; }\n  </style>\n</head>\n<body>\n\n  <h1>Hello World!</h1>\n  <p>This is a styled paragraph using CSS.</p>\n  <ul>\n    <li>HTML makes the structure</li>\n    <li>CSS makes the design</li>\n  </ul>\n\n</body>\n</html>");
+    }
+  </script>
+
+</body>
+</html>

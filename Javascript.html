@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f9ff;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    header {
+      background: #45a049;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    section {
+      background: white;
+      padding: 15px;
+      margin: 15px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    h2 { color: #45a049; }
+    button {
+      display: block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      background: #45a049;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>JavaScript</h1>
+  </header>
+
+  <section>
+    <h2>Definition</h2>
+    <p><b>JavaScript</b> is a scripting language used to make web pages interactive, dynamic, and functional.  
+       It can update content, control multimedia, and handle user interactions.</p>
+  </section>
+
+  <section>
+    <h2>Uses</h2>
+    <ul>
+      <li>Adding interactivity like buttons, forms, and alerts</li>
+      <li>Changing HTML & CSS dynamically</li>
+      <li>Validating form inputs</li>
+      <li>Creating animations and effects</li>
+      <li>Building full web applications</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Types</h2>
+    <ul>
+      <li><b>Internal JavaScript</b> → Written inside &lt;script&gt; tag on the same page</li>
+      <li><b>External JavaScript</b> → Written in a separate .js file</li>
+      <li><b>Inline JavaScript</b> → Written directly inside an HTML tag (not recommended)</li>
+    </ul>
+  </section>
+
+  <!-- Button with alert -->
+  <button onclick="showJSExample()">Show Example</button>
+
+  <script>
+    function showJSExample() {
+      alert("Example of JavaScript:\n\n<html>\n<head>\n  <title>JavaScript Example</title>\n</head>\n<body>\n\n  <h1>Hello with JavaScript</h1>\n  <button onclick=\"alert('Button clicked!')\">Click Me</button>\n\n  <script>\n    document.write('This text is written by JavaScript.');\n  <\/script>\n\n</body>\n</html>");
+    }
+  </script>
+
+</body>
+</html>

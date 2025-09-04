@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f7ff;
+      padding: 20px;
+    }
+    header {
+      background: #45a049;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      border-radius: 5px;
+    }
+    section {
+      background: white;
+      padding: 20px;
+      margin: 20px auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      width: 400px;
+    }
+    h2 { color: #45a049; }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, textarea {
+      width: 90%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background: #45a049;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+
+  <section>
+     <h1 style="text-align: center;" >Contact Me</h1>
+    <h2>Send a Message</h2>
+    <form onsubmit="showAlert(event)">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="message">Your Message</label>
+      <textarea id="message" rows="4" placeholder="Enter your message" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <script>
+    function showAlert(event) {
+      event.preventDefault(); // form submit hone se rokta hai
+      let name = document.getElementById("name").value;
+      alert("Thank you " + name + "! Your message has been sent successfully.");
+    }
+  </script>
+
+</body>
+</html>
